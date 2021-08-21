@@ -1,3 +1,16 @@
+# Cakes app server
+
+This is the app server for the cakes coding challenge. Try it out [here](http://cakes.muhammedhaque.co.uk)
+
+## Usage
+
+Simply run `npm install` to install dependencies and you can run it with `npm start`.
+
+## Configuration
+
+Configuration is done with environment variables:
+- `REACT_APP_API_SERVER` - the url of the API server, default http://localhost:3001
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

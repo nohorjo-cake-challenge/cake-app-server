@@ -1,24 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import CakesList from './components/CakesList';
+
+import './App.scss';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main-page">
+      <h1 className="header">Amazing Cakes!</h1>
+      <article className="intro">Here at Amazing Cakes we collect data about all our favourite cakes and present them here for everyone</article>
+      <CakesList/>
     </div>
   );
 }

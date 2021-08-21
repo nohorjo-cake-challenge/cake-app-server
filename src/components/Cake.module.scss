@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border: solid 2px #6D7469;
+  border-radius: 5px;
+  height: fit-content;
+  .cakeImage {
+    $size: 20rem;
+    max-width: $size;
+    max-height: $size;
+    object-fit: contain;
+    cursor: pointer;
+  }
+  .extraInfo {
+    max-height: 0;
+    transition: 0.4s ease-in-out;
+    overflow: hidden;
+    &.open {
+      max-height: 999px;
+    }
+    .deleteButton {
+      cursor: pointer;
+      height: 3rem;
+    }
+  }
+}

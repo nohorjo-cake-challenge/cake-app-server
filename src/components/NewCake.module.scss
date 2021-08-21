@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  .mainImage {
+    $size: 16rem;
+    width: $size;
+    height: $size;
+    object-fit: contain;
+  }
+  .newForm {
+    >div {
+      margin-bottom: 1rem;
+      .errorMessage {
+        color: #f00;
+        font-size: 12pt;
+      }
+    }
+  }
+}
+.submitButton {
+  background: unset;
+  border: solid #6D7469 3px;
+  padding: 0.75rem;
+  margin-top: 2rem;
+  border-radius: 8px;
+  color: #6D7469;
+  font-weight: bold;
+  cursor: pointer;
+  &:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+}

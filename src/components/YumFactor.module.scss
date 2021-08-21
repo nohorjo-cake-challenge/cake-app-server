@@ -1,0 +1,12 @@
+.container {
+  margin-top: 1rem;
+  &.clickable {
+    cursor: pointer;
+  }
+  .sliceImage {
+    opacity: 0.2;
+    &.active {
+      opacity: 1;
+    }
+  }
+}
