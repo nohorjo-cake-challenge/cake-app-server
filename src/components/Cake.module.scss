@@ -6,9 +6,10 @@
   margin: 0.5rem;
   border: solid 2px #6D7469;
   border-radius: 5px;
+  $size: 20rem;
+  max-width: $size;
   height: fit-content;
   .cakeImage {
-    $size: 20rem;
     max-width: $size;
     max-height: $size;
     object-fit: contain;
